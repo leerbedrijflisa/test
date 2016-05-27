@@ -34,12 +34,7 @@
   },
 
   "buildOptions": {
-    "emitEntryPoint": true,
-    "preserveCompilationContext": true
-  },
-
-  "runtimeOptions": {
-    "gcServer": true
+    "emitEntryPoint": true
   },
 
   "publishOptions": {
@@ -49,9 +44,5 @@
       "appsettings.json",
       "web.config"
     ]
-  },
-
-  "scripts": {
-    "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
   }
 }
